@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TP_TPGO_SAC_A_DOS.jnlp">
+  <information>
+    <title>TP_TPGO_SAC_A_DOS</title>
+    <vendor>walid y</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TP_TPGO_SAC_A_DOS.jar" size="72340" download="eager" />
+    <jar href="lib\itextpdf-5.4.3.jar" size="2070978" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TP_TPGO_SAC_A_DOS" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="tp_tpgo_sac_a_dos.TP_TPGO_SAC_A_DOS"  name="TP_TPGO_SAC_A_DOS" />
+  <update check="always"/>
+</jnlp>

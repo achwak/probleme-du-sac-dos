@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp_tpgo_sac_a_dos.FenetreMenuController">
+   <children>
+      <Button layoutX="119.0" layoutY="355.0" mnemonicParsing="false" onAction="#ClikEntrer" style="-fx-background-color: white; -fx-border-color: #28ab2e;" text="Entrer" textFill="#28ab2e">
+         <font>
+            <Font name="Century" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="20.0" layoutY="4.0" prefHeight="61.0" prefWidth="312.0" text="TP N°01 TPGO" textFill="#5ef568" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font name="Century" size="42.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="101.0" layoutY="179.0" prefHeight="61.0" prefWidth="144.0" text="YOUNES Walid">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="100.0" layoutY="137.0" prefHeight="61.0" prefWidth="144.0" text="AZOUD Achwak">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="129.0" layoutX="106.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Bag-School.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="100.0" layoutY="86.0" prefHeight="61.0" prefWidth="144.0" text="Réaliser Par :" underline="true">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="61.0" fitWidth="46.0" layoutX="61.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chocolate-06.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="71.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" rotate="-15.0">
+         <image>
+            <Image url="@../Hammer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="148.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Alarm-Clock.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="127.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" rotate="-9.5">
+         <image>
+            <Image url="@../Band%20Aid-01.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="46.0" layoutX="234.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chocolate-06.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="239.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" rotate="-175.1">
+         <image>
+            <Image url="@../Hammer.png" />
+         </image>
+         <rotationAxis>
+            <Point3D x="20.0" y="-180.0" z="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="168.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true" rotate="-26.6">
+         <image>
+            <Image url="@../Mobile-Phone.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="149.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chocolate-07.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="160.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chocolate-05.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="119.0" layoutY="409.0" mnemonicParsing="false" onAction="#ClikSortir" prefHeight="46.0" prefWidth="109.0" style="-fx-background-color: white; -fx-border-color: #28ab2e;" text="Annuler" textFill="#28ab2e">
+         <font>
+            <Font name="Century" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

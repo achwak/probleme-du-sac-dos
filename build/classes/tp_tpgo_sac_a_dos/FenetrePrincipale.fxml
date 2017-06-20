@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp_tpgo_sac_a_dos.FenetrePrincipaleController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16011cc" height="138.0" layoutX="85.0" layoutY="318.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16011cc" height="138.0" layoutX="174.0" layoutY="431.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16011cc" height="138.0" layoutX="255.0" layoutY="388.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16011cc" height="138.0" layoutX="7.0" layoutY="362.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ffb2" height="198.0" layoutX="31.0" layoutY="275.0" rotate="-112.4" stroke="#2197ffce" strokeType="INSIDE" width="210.0">
+         <rotationAxis>
+            <Point3D x="15.0" y="5.0" z="1.0" />
+         </rotationAxis>
+      </Rectangle>
+      <Label layoutX="559.0" layoutY="20.0" prefHeight="33.0" prefWidth="282.0" text="Problème du Sac à dos">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="350.0" layoutY="94.0" prefHeight="168.0" prefWidth="500.0" style="-fx-border-color: black;" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0">
+         <children>
+            <TextField fx:id="nbr_objets" layoutX="223.0" layoutY="27.0" onKeyPressed="#ClikCreerTableObjet" promptText="nombre d'objet total" />
+            <TextField fx:id="poid_max" layoutX="223.0" layoutY="84.0" onKeyPressed="#ClikSetContenace" promptText="contenance maximale" />
+            <Label layoutX="21.0" layoutY="31.0" text="Nombre d'objets :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="88.0" text="Contenance maximale :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="270.0" layoutY="285.0" prefHeight="271.0" prefWidth="687.0" style="-fx-border-color: black;" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="243.0">
+         <children>
+            <TableView fx:id="Objet_Table" layoutX="3.0" layoutY="3.0" prefHeight="216.0" prefWidth="683.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+              <columns>
+                <TableColumn fx:id="num_objet_col" prefWidth="172.0" text="Numéro de l'Objet" />
+                <TableColumn fx:id="poid_objet_col" minWidth="0.0" prefWidth="259.0" text="poid de l'Objet" />
+                  <TableColumn fx:id="valeur_objet_col" prefWidth="253.0" text="Valeur de l'Objet" />
+              </columns>
+            </TableView>
+            <Label layoutX="33.0" layoutY="230.0" text="Poid de l'objet :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="274.0" layoutY="230.0" text="Valeur de l'objet :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="poid_objet" layoutX="128.0" layoutY="227.0" prefHeight="25.0" prefWidth="125.0" promptText="poid" />
+            <TextField fx:id="valuer_objet" layoutX="388.0" layoutY="226.0" onKeyPressed="#ClickAjouterObjetKey" prefHeight="25.0" prefWidth="125.0" promptText="valeur" />
+            <Button layoutX="530.0" layoutY="226.0" mnemonicParsing="false" onAction="#ClickAjouterObjet" text="Ajouter">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="603.0" layoutY="226.0" mnemonicParsing="false" onAction="#ClickSupprimerObjet" text="Supprimer">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="364.0" layoutY="565.0" prefHeight="96.0" prefWidth="500.0" style="-fx-border-color: black;" AnchorPane.leftAnchor="364.0" AnchorPane.rightAnchor="336.0">
+         <children>
+            <Button layoutX="140.0" layoutY="26.0" mnemonicParsing="false" onAction="#ClickAfficherResultat" prefHeight="44.0" prefWidth="229.0" text="Afficher la solution" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="132.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="168.0" fitWidth="177.0" layoutX="47.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Bag-School.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="101.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Bread-01.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="92.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true" rotate="-85.9">
+         <image>
+            <Image url="@../Cereal-Corn-01.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="134.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Candy-Lollipop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="75.0" layoutX="74.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Beverage-Milk-02.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="131.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chocolate-06.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="146.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chocolate-05.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="122.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chocolate-07.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="48.0" layoutX="23.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true" rotate="-101.3">
+         <image>
+            <Image url="@../Hammer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="48.0" layoutX="191.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" rotate="-43.6">
+         <image>
+            <Image url="@../Mobile-Phone.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="103.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" rotate="-9.5">
+         <image>
+            <Image url="@../Text%20Edi2t.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="48.0" layoutX="51.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Mixer-Grinder.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="48.0" layoutX="50.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" rotate="-170.8">
+         <image>
+            <Image url="@../Injection%20-%2001.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="48.0" layoutX="168.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../Text%20Edit1.png" />
+         </image>
+         <rotationAxis>
+            <Point3D x="70.0" y="-180.0" z="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="48.0" layoutX="71.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" rotate="-29.7">
+         <image>
+            <Image url="@../Text%20Edit3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="48.0" layoutX="137.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" rotate="177.7">
+         <image>
+            <Image url="@../Text%20Edit.png" />
+         </image>
+         <rotationAxis>
+            <Point3D x="20.0" y="-180.0" />
+         </rotationAxis>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="103.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Road-Median.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
